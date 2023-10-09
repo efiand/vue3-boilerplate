@@ -1,0 +1,9 @@
+.move-up {
+	&-enter-active {
+		animation: fade-in 1s ease-in;
+	}
+
+	&-leave-active {
+		animation: move-up 0.3s ease-in;
+	}
+}

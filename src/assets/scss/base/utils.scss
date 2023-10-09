@@ -1,0 +1,10 @@
+@use "../env" as *;
+
+.container {
+	padding-inline: 20px;
+
+	@include media-desktop {
+		width: 1200px;
+		margin-inline: auto;
+	}
+}
