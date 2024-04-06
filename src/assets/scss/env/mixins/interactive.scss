@@ -1,0 +1,14 @@
+@mixin interactive-default {
+	cursor: pointer;
+	transition: opacity $transitions-default;
+
+	@media (hover: hover) {
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+	}
+}
