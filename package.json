@@ -1,0 +1,32 @@
+{
+  "name": "vue3-boilerplate",
+  "private": true,
+  "type": "module",
+  "pre-commit": [
+    "lint-format"
+  ],
+  "browserslist": [
+    "> 0.2%",
+    "last 6 version"
+  ],
+  "scripts": {
+    "type-check": "vue-tsc --build --force",
+    "lint-format": "npm run type-check && prettier --write . && eslint . --fix && stylelint **/*.{scss,vue} --fix",
+    "lint": "npm run type-check && prettier --check . && eslint . && stylelint **/*.{scss,vue}",
+    "dev": "vite",
+    "build": "npm run type-check && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.1.4",
+    "efiand-shared": "0.2.1",
+    "eslint": "9.13.0",
+    "pinia": "2.2.4",
+    "pre-commit": "1.2.2",
+    "prettier": "3.3.3",
+    "stylelint": "16.10.0",
+    "vite": "5.4.10",
+    "vue": "3.5.12",
+    "vue-router": "4.4.5"
+  }
+}
